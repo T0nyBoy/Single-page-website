@@ -14,7 +14,7 @@ body{
 .backgroundContainer{
     display: flex;
     flex-flow: column;
-    background:  url("../photos/luke-stackpoole-mOEqOtmuPG8-unsplash.jpg") center center no-repeat;
+    background:  url("/Single-page-website/photos/luke-stackpoole-mOEqOtmuPG8-unsplash.jpg") center center no-repeat;
     background-size: cover;
 }
 
