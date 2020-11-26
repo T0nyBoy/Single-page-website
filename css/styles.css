@@ -1,0 +1,144 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+}
+
+.mainPages{
+    background-color: rgba(46, 46, 46, 0.426);
+    z-index: 10;
+}
+
+.backgroundContainer{
+    display: flex;
+    flex-flow: column;
+    background:  url("../photos/luke-stackpoole-mOEqOtmuPG8-unsplash.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.p1MainFrame, .p2MainFrame{
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.innerContainerRight{
+    display:  flex;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    flex: 0 1 50%;
+    box-sizing: border-box;
+
+}
+
+.innerContainerLeft{
+    display:  flex;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    flex: 0 1 50%;
+    box-sizing: border-box;
+}
+
+.innerContainerRight>div{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    height: 100%;
+    width: 100%;
+
+}
+
+.innerContainerLeft>div{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    height: 100%;
+    width: 100%;
+    }
+
+    .p2f2>div{
+        justify-content: flex-start;
+    }
+
+    .p2f1>div{
+        justify-content: flex-end;
+    }
+
+    .p3MainFrame{
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        width: 100%;
+    
+        justify-content: center;
+        align-items: center;
+    }
+
+    .p3f1{
+        display: flex;
+        flex: 1 1 90vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .p3f2{
+        display: flex;
+        flex: 0 1 10vh;
+        max-height: 50px;
+        position: relative;
+        bottom: 0px;
+
+    }
+
+    .p3f2>div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0.5em;
+        width: 100%;
+        }
+
+        .p3f2>div>a{
+            margin: 0 1em;
+            color: white;
+            font-size: 1.5em;
+        }
+
+    @media(max-width: 860px){
+        .p1MainFrame, .p2MainFrame{
+            display: flex;
+            flex-flow: column;
+        }
+    
+        .p2f1, .p1f1{
+            order: 2;
+        }
+    
+        .p2f2, .p1f2{
+            order: 1;
+        }
+
+        .p2f2>div, .p2f1>div, .p1f2>div{
+            align-items: center;
+            justify-content: center;
+        }
+    
+    
+        .p3f2>div{
+            justify-content: space-between;
+        }
+    }
+        
